@@ -1,15 +1,17 @@
-<tui-input-date
-  [(ngModel)]="date"
->
-  Choose a date
-</tui-input-date>
+<div class="picker-container">
+  <tui-input-date
+    [(ngModel)]="date"
+  >
+    Choose a date
+  </tui-input-date>
 
-<tui-input-time
-  [(ngModel)]="time"
-  [items]="availableTimes"
->
-  Choose hour
-</tui-input-time>
+  <tui-input-time
+    [(ngModel)]="time"
+    [items]="timeSlots"
+  >
+    Choose hour
+  </tui-input-time>
+</div>
 
 <button
   tuiButton

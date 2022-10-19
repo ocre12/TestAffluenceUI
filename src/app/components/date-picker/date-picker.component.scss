@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  padding: 5% 20%;
+
+  .picker-container {
+    display: inline-flex;
+    gap: 2rem;
+
+    * {
+      flex-grow: 1;
+    }
+  }
+
+  button {
+    width: fit-content;
+    justify-self: center;
+  }
+}
