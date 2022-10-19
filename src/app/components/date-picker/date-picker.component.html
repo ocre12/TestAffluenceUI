@@ -1,0 +1,23 @@
+<tui-input-date
+  [(ngModel)]="date"
+>
+  Choose a date
+</tui-input-date>
+
+<tui-input-time
+  [(ngModel)]="time"
+  [items]="availableTimes"
+>
+  Choose hour
+</tui-input-time>
+
+<button
+  tuiButton
+  type="button"
+  appearance="primary"
+  (click)="checkIfAvailable()"
+  [disabled]="!date || !time"
+>
+  Check if this date is available
+</button>
+
